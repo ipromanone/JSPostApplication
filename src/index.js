@@ -3,13 +3,15 @@ import { NavigationComponent } from './components/navigation.component'
 import { CreateComponenet } from './components/create.component'
 import { FavoriteComponent } from './components/favorite.component'
 import { PostComponenet } from './components/posts.component'
+import { LoaderComponent } from './components/loader.component'
 
 
 new HeaderComponent('header')
 
 const navigation = new NavigationComponent('navigation')
+const loader = new LoaderComponent('loader')
 
-const posts = new PostComponenet('posts')
+const posts = new PostComponenet('posts', {loader})
 const create = new CreateComponenet('create')
 const favorite = new FavoriteComponent('favorite')
 
