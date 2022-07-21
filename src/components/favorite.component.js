@@ -1,6 +1,6 @@
 import { Component } from "../core/component";
 import { apiService } from "../services/api.services";
-import { renderPost } from "../../templates/post.template";
+import { renderPost } from "../templates/post.template";
 
 export class FavoriteComponent extends Component {
     constructor(id, options) {
